@@ -1,0 +1,7 @@
+Error: failed external call: _ZNSolsEPFRSoS_E
+File: demo.cpp
+Line: 18
+assembly.ll line: 200
+State: 1
+Stack: 
+	#000000200 in main(1, 94759546051904) at demo.cpp:18
