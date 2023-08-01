@@ -1,5 +1,5 @@
-#About the project:
-##Compund unit
+# About the project:
+## Compund unit
 This is a project for the course "Programming paradigms".<br>
 Paradigm: functional, generic;<br>
 Language: C++;<br>
@@ -16,10 +16,10 @@ The program is compiled using the following command:<br>
 and you run the program with:<br>
 <code>./demo</code>.<br>
 
-#Tools used for the verification:
+# Tools used for the verification:
      - perf;
      - massif;
      - memcheck;
 
-#Conclusions:
+# Conclusions:
      Project is not interactive so we can't say much about it.      
