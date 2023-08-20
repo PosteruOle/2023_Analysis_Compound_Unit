@@ -1,8 +1,7 @@
 # 2023_Analysis_Compound_Unit
 
 ## Analiza projekta Compound Unit (složene merne jedinice)
-Ovaj projekat predstavlja samostalni praktični seminarski rad izrađen za potrebe kursa Verifikacija softvera <br>
-na master studijama Matematičkog fakulteta u Beogradu. <br>
+Ovaj projekat predstavlja samostalni praktični seminarski rad izrađen za potrebe kursa Verifikacija softvera na master studijama Matematičkog fakulteta u Beogradu. <br>
 Samostalni praktični seminarski rad podrazumeva primenu alata za statičku i dinamičku verifikaciju na nekom od studentskih projekata. <br>
 
 ## O projektu:
