@@ -1,8 +1,7 @@
 # 2023_Analysis_Compound_Unit
 
 ## Analiza projekta Compound Unit (složene merne jedinice)
-Ovaj projekat predstavlja samostalni praktični seminarski rad izrađen za potrebe kursa Verifikacija softvera na master studijama Matematičkog fakulteta u Beogradu. <br>
-Samostalni praktični seminarski rad podrazumeva primenu alata za statičku i dinamičku verifikaciju na nekom od studentskih projekata. <br>
+Ovaj projekat predstavlja samostalni praktični seminarski rad izrađen za potrebe kursa Verifikacija softvera na master studijama Matematičkog fakulteta u Beogradu. Samostalni praktični seminarski rad podrazumeva primenu alata za statičku i dinamičku verifikaciju na nekom od studentskih projekata. <br>
 
 ## O projektu:
 Projekat je urađen za potrebe kursa Programske paradigme. <br>
@@ -13,5 +12,11 @@ Ukoliko bismo pomnožili različite veličine, na primer: 32m/s^2 * 5s <br>
 ...trebalo bi da dobijemo m/s, odnosno <meter<1>, second<-1>>. <br>
 
 ## Korišćeni alati:
+```
+- gcov lcov
+- Valgrind - massif
+- Valgrind - memcheck
+- KLEE
+```
 
 ## Izvedeni zaključci:
