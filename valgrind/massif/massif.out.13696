@@ -1,5 +1,5 @@
 desc: --stacks=yes
-cmd: ./1
+cmd: ./a.out
 time_unit: i
 #-----------
 snapshot=0
@@ -21,23 +21,23 @@ n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=2
 #-----------
-time=73122
+time=73036
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=2696
+mem_stacks_B=3744
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=122586
+time=124998
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=1432
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=162067
+time=179650
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1592
@@ -45,32 +45,31 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=208011
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
-#-----------
-snapshot=6
-#-----------
-time=242379
+time=242318
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1112
 heap_tree=empty
 #-----------
-snapshot=7
+snapshot=6
 #-----------
-time=286867
+time=286806
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1136
 heap_tree=empty
 #-----------
+snapshot=7
+#-----------
+time=319445
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
 snapshot=8
 #-----------
-time=319506
+time=387730
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -78,82 +77,82 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=361773
+time=445139
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=1112
 heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=401528
+time=479642
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=455642
+time=530535
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=1584
 heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=521905
+time=559844
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1112
-heap_tree=empty
+mem_stacks_B=1392
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=13
 #-----------
-time=563461
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=14
-#-----------
-time=610643
+time=610561
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1112
 heap_tree=detailed
 n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
-snapshot=15
+snapshot=14
 #-----------
-time=661048
+time=660966
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1392
 heap_tree=empty
 #-----------
-snapshot=16
+snapshot=15
 #-----------
-time=707330
+time=707248
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1592
 heap_tree=empty
 #-----------
-snapshot=17
+snapshot=16
 #-----------
-time=775448
+time=775366
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
 heap_tree=detailed
 n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
+snapshot=17
+#-----------
+time=813813
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
 snapshot=18
 #-----------
-time=813895
+time=870796
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -161,47 +160,47 @@ heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=870878
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=20
-#-----------
-time=921135
+time=921053
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1592
 heap_tree=empty
 #-----------
-snapshot=21
+snapshot=20
 #-----------
-time=955064
+time=954982
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1112
 heap_tree=empty
 #-----------
-snapshot=22
+snapshot=21
 #-----------
-time=1009166
+time=1009084
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
 heap_tree=empty
 #-----------
-snapshot=23
+snapshot=22
 #-----------
-time=1039942
+time=1039860
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1112
 heap_tree=empty
 #-----------
+snapshot=23
+#-----------
+time=1087172
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
+heap_tree=empty
+#-----------
 snapshot=24
 #-----------
-time=1087254
+time=1121437
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -209,7 +208,7 @@ heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=1121519
+time=1175958
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -217,64 +216,65 @@ heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=1176040
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=27
-#-----------
-time=1243937
+time=1243855
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1592
 heap_tree=empty
 #-----------
-snapshot=28
+snapshot=27
 #-----------
-time=1277960
+time=1277878
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1592
 heap_tree=detailed
 n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
-snapshot=29
+snapshot=28
 #-----------
-time=1324977
+time=1324895
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
 heap_tree=empty
 #-----------
-snapshot=30
+snapshot=29
 #-----------
-time=1379500
+time=1379418
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1112
 heap_tree=empty
 #-----------
-snapshot=31
+snapshot=30
 #-----------
-time=1415478
+time=1416763
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
 heap_tree=empty
 #-----------
-snapshot=32
+snapshot=31
 #-----------
-time=1450875
+time=1473028
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=32
+#-----------
+time=1547719
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1112
 heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=1504368
+time=1585458
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -282,23 +282,24 @@ heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=1575392
+time=1660205
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1648
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=35
+#-----------
+time=1735134
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1688
 heap_tree=empty
 #-----------
-snapshot=35
-#-----------
-time=1611180
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
 snapshot=36
 #-----------
-time=1664517
+time=1773405
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -306,97 +307,96 @@ heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=1700027
+time=1811060
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1112
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=1735698
+time=1867148
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1336
+mem_stacks_B=1176
 heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=1771113
+time=1904940
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1392
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=1824472
+time=1943200
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
-heap_tree=detailed
-n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=1859842
+time=2000028
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1648
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=1913827
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=43
-#-----------
-time=1950060
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1336
-heap_tree=empty
-#-----------
-snapshot=44
-#-----------
-time=2003507
+time=2037983
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
 heap_tree=detailed
 n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
-snapshot=45
+snapshot=43
 #-----------
-time=2039038
+time=2075290
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1592
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2131131
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1176
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2168796
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=2109748
+time=2206492
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=2145064
+time=2243868
 mem_heap_B=0
 mem_heap_extra_B=0
-mem_stacks_B=1592
+mem_stacks_B=1336
 heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=2198697
+time=2288194
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1336
@@ -404,112 +404,73 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=2269698
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1592
-heap_tree=empty
-#-----------
-snapshot=50
-#-----------
-time=2300482
-mem_heap_B=0
-mem_heap_extra_B=0
-mem_stacks_B=1688
-heap_tree=empty
-#-----------
-snapshot=51
-#-----------
-time=2331258
+time=2325395
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=1176
 heap_tree=empty
 #-----------
-snapshot=52
+snapshot=50
 #-----------
-time=2335743
+time=2335764
 mem_heap_B=72704
 mem_heap_extra_B=8
 mem_stacks_B=208
 heap_tree=detailed
 n1: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4900A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+ n1: 72704 0x4900A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=51
+#-----------
+time=2337529
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=1992
+heap_tree=detailed
+n1: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4900A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=52
+#-----------
+time=2366844
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=648
+heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=2337508
+time=2396346
 mem_heap_B=72704
 mem_heap_extra_B=8
-mem_stacks_B=1944
-heap_tree=detailed
-n1: 72704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4900A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+mem_stacks_B=648
+heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=2368287
+time=2425672
 mem_heap_B=72704
 mem_heap_extra_B=8
-mem_stacks_B=680
+mem_stacks_B=2056
 heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=2399124
-mem_heap_B=72704
-mem_heap_extra_B=8
-mem_stacks_B=640
-heap_tree=empty
-#-----------
-snapshot=56
-#-----------
-time=2430073
-mem_heap_B=72704
-mem_heap_extra_B=8
-mem_stacks_B=1912
-heap_tree=empty
-#-----------
-snapshot=57
-#-----------
-time=2453182
-mem_heap_B=73728
-mem_heap_extra_B=16
-mem_stacks_B=1680
-heap_tree=detailed
-n2: 73728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4900A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
- n1: 1024 0x4AD8D03: _IO_file_doallocate (filedoalloc.c:101)
-  n1: 1024 0x4AE8ECF: _IO_doallocbuf (genops.c:347)
-   n1: 1024 0x4AE7F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
-    n1: 1024 0x4AE66B4: _IO_new_file_xsputn (fileops.c:1244)
-     n1: 1024 0x4AE66B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
-      n1: 1024 0x4ADA3C0: fwrite (iofwrite.c:39)
-       n1: 1024 0x498D823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 1024 0x498DBDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-         n0: 1024 0x10A53E: main (demo.cpp:17)
-#-----------
-snapshot=58
-#-----------
-time=2453273
+time=2453212
 mem_heap_B=73728
 mem_heap_extra_B=16
 mem_stacks_B=2984
 heap_tree=peak
 n2: 73728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x4900A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+ n1: 72704 0x4900A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
@@ -520,22 +481,22 @@ n2: 73728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 1024 0x4AE66B4: _IO_new_file_xsputn (fileops.c:1244)
      n1: 1024 0x4AE66B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
       n1: 1024 0x4ADA3C0: fwrite (iofwrite.c:39)
-       n1: 1024 0x498D823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-        n1: 1024 0x498DBDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x498D853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x498DC0B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
          n0: 1024 0x10A53E: main (demo.cpp:17)
 #-----------
-snapshot=59
+snapshot=56
 #-----------
-time=2484076
+time=2482523
 mem_heap_B=73728
 mem_heap_extra_B=16
-mem_stacks_B=600
+mem_stacks_B=568
 heap_tree=empty
 #-----------
-snapshot=60
+snapshot=57
 #-----------
-time=2514854
+time=2511888
 mem_heap_B=73728
 mem_heap_extra_B=16
-mem_stacks_B=552
+mem_stacks_B=568
 heap_tree=empty
