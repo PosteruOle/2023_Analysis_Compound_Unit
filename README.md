@@ -12,11 +12,12 @@ Ukoliko bismo pomnožili različite veličine, na primer: 32m/s^2 * 5s <br>
 ...trebalo bi da dobijemo m/s, odnosno <meter<1>, second<-1>>. <br>
 
 ## Korišćeni alati:
-```
-- gcov lcov
-- Valgrind - massif
-- Valgrind - memcheck
-- KLEE
-```
+
+- **gcov lcov**
+- **Valgrind - massif**
+- **Valgrind - memcheck**
+- **KLEE**
+- **Perf**
+
 
 ## Izvedeni zaključci:
