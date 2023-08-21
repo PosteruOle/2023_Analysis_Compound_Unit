@@ -68,13 +68,4 @@ s^-4
 ## Perf
 
 ## Zaključci:
-
-# Tools used for the verification:
-     - perf;
-     - massif;
-     - memcheck;
-     - gcov;
-     - klee
-
-# Conclusions:
-     Project is not interactive so we can't say much about it.      
+     
