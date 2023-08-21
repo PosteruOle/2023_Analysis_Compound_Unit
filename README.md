@@ -16,6 +16,7 @@ Ukoliko bismo pomnožili različite veličine, na primer: 32m/s^2 * 5s <br>
 - **gcov lcov**
 - **Valgrind - massif**
 - **Valgrind - memcheck**
+- **Valgrind - callgrind**
 - **KLEE**
 - **Perf**
 
