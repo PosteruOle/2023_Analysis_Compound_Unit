@@ -1,20 +1,73 @@
-# About the project:
-## Compund unit
-This is a project for the course "Programming paradigms".<br>
-Paradigm: functional, generic;<br>
-Language: C++;<br>
-<br>
-The general idea for the project:<br>
-We want to define a generic type "compound_unit" which would be used for the representation of different measurment units. <br>
-For example: <code>compound_unit<meter<1>, second<-2>></code> would represent m/s^2.<br>
-When we would multiply values, for example:<br>
-<code>32m/s^2 * 5s</code> <br>
-we should get a value with the type m/s, namely <code><meter<1>, second<-1>></code>.<br>
-<br><br>
-The program is compiled using the following command:<br>
-<code>g++ -std=c++2a -o demo demo.cpp</code>, <br>
-and you run the program with:<br>
-<code>./demo</code>.<br>
+# Izveštaj analize projekta
+
+## O projektu:
+
+## Code coverage (gcov lcov):
+-Kratak pregled izgenerisanih .html stranica:
+![image](./screenshots/gcov_01.png)
+![image](./screenshots/gcov_04.png)
+## Valgrind - massif:
+## Valgrind - memcheck:
+- Valgrind je platforma otvorenog koda za naprednu dinamičku analizu. On obuhvata nekoliko alata od kojih je svaki specijalizovan za detektovanje određenog problema. Memcheck je najpoznatiji među njima i koristi se za detektovanje memorijskih grešaka i radi analizu nad mašinskim kodom. Može se koristiti za otkrivanje više vrsta problema poput:
+    - upisivanje vrednosti van granica opsega
+    - pristupanje već oslobođenoj memoriji
+    - curenje memorije
+    - korišćenje neinicijalizovanih vrednosti ...
+Projekat je izgrađen pomoću komande:
+```
+g++ -std=c++17 -g -O0 -Wall ../../../2019_Compound-Units-master/demo.cpp -o test 
+```
+Memcheck alat je pokrenut na sledeći naćin:
+```
+valgrind --tool=memcheck --show-leak-kinds=all --leak-check=full --track-origins=yes ./test
+```
+Prilikom pokretanja alata memcheck jedan od izveštaja bio je sledeći:
+```
+==15262== Memcheck, a memory error detector
+==15262== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==15262== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==15262== Command: ./test
+==15262== 
+Acceleration:
+m^1s^-2
+
+Merged two compound_units:
+s^2s^3m^1s^-2
+
+Condensing the two merged ones:
+s^3m^1
+
+Multiplying two compound_units:
+m^5s^-3
+
+Dividing two compound_units:
+m^1s^-2
+
+Dividing again two compound_units:
+m^1s^0
+
+Removing degrees that are equal to zero:
+m^1
+
+Unfolding a nested compound_unit:
+m^2m^6s^-4m^-8
+
+Formating the unfolded compound_unit:
+s^-4
+
+==15262== 
+==15262== HEAP SUMMARY:
+==15262==     in use at exit: 0 bytes in 0 blocks
+==15262==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==15262== 
+==15262== All heap blocks were freed -- no leaks are possible
+==15262== 
+==15262== For lists of detected and suppressed errors, rerun with: -s
+==15262== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
+## Perf
+
+## Zaključci:
 
 # Tools used for the verification:
      - perf;
