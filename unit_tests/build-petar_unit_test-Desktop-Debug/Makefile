@@ -16,7 +16,7 @@ CC            = gcc
 CXX           = g++
 DEFINES       = -DQT_TESTLIB_LIB -DQT_CORE_LIB -DQT_TESTCASE_BUILDDIR='"/home/ptesic@syrmia.com/Desktop/VS/compound_unit/2023_Analysis_Compound_Unit/unit_tests/build-petar_unit_test-Desktop-Debug"' -DQT_QML_DEBUG
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -g -std=gnu++1z -Wall -W -D_REENTRANT -fPIC $(DEFINES)
+CXXFLAGS      = -pipe --coverage -g -std=gnu++1z -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 INCPATH       = -I../petar_unit_test -I. -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtTest -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
 QMAKE         = /lib/qt5/bin/qmake
 DEL_FILE      = rm -f
@@ -39,7 +39,7 @@ COMPRESS      = gzip -9f
 DISTNAME      = petar_unit_test1.0.0
 DISTDIR = /home/ptesic@syrmia.com/Desktop/VS/compound_unit/2023_Analysis_Compound_Unit/unit_tests/build-petar_unit_test-Desktop-Debug/.tmp/petar_unit_test1.0.0
 LINK          = g++
-LFLAGS        = 
+LFLAGS        = --coverage
 LIBS          = $(SUBLIBS) /usr/lib/x86_64-linux-gnu/libQt5Test.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lpthread   
 AR            = ar cqs
 RANLIB        = 
@@ -343,7 +343,7 @@ compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
 moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -std=gnu++1z -Wall -W -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
+	g++ -pipe --coverage -g -std=gnu++1z -Wall -W -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all:
 compiler_moc_header_clean:
@@ -354,6 +354,9 @@ compiler_moc_source_clean:
 	-$(DEL_FILE) tst_compound_unit_test.moc
 tst_compound_unit_test.moc: ../petar_unit_test/tst_compound_unit_test.cpp \
 		../petar_unit_test/is_valid.hpp \
+		../petar_unit_test/compound_unit.hpp \
+		../petar_unit_test/base_unit.hpp \
+		../petar_unit_test/base_unit_traits.hpp \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ptesic@syrmia.com/Desktop/VS/compound_unit/2023_Analysis_Compound_Unit/unit_tests/build-petar_unit_test-Desktop-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ptesic@syrmia.com/Desktop/VS/compound_unit/2023_Analysis_Compound_Unit/unit_tests/petar_unit_test -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtTest -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../petar_unit_test/tst_compound_unit_test.cpp -o tst_compound_unit_test.moc
@@ -369,6 +372,9 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_source_clean
 ####### Compile
 
 tst_compound_unit_test.o: ../petar_unit_test/tst_compound_unit_test.cpp ../petar_unit_test/is_valid.hpp \
+		../petar_unit_test/compound_unit.hpp \
+		../petar_unit_test/base_unit.hpp \
+		../petar_unit_test/base_unit_traits.hpp \
 		tst_compound_unit_test.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tst_compound_unit_test.o ../petar_unit_test/tst_compound_unit_test.cpp
 
