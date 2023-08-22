@@ -14,6 +14,7 @@ Ukoliko bismo pomnožili različite veličine, na primer: 32m/s^2 * 5s <br>
 ## Korišćeni alati:
 
 - **gcov lcov**
+- **QtTest**
 - **Valgrind - massif**
 - **Valgrind - memcheck**
 - **Valgrind - callgrind**
