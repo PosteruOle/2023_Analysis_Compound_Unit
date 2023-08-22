@@ -2,11 +2,15 @@
 
 ## O projektu:
 
+## Unit testing QtTest (testiranje jedinica koda):
+-Unit testovi, odnosno testovi jedinica koda, predstavljaju vrstu dinamičke verifikacije softvera. Pomoću njih se utvrđuje ispravnost manjih jedinica sistema, to mogu biti različite celine u zavisnosti od paradigme koja je korišćena.
+
 ## Code coverage (gcov lcov):
 -Kratak pregled izgenerisanih .html stranica:
 ![image](./screenshots/gcov_01.png)
 ![image](./screenshots/gcov_04.png)
 ## Valgrind - massif:
+-Sledeći alat koji je korišćen za analizu projekta je massif, alat za analizu hip memorije. On se koristi za otkrivanje posebne vrste curenja memorije - kada nije izgubljena referenca na neki objekat, već se on jednostavno ne koristi i time se troši velika količina memorije bespotrebno.
 ## Valgrind - memcheck:
 - Valgrind je platforma otvorenog koda za naprednu dinamičku analizu. On obuhvata nekoliko alata od kojih je svaki specijalizovan za detektovanje određenog problema. Memcheck je najpoznatiji među njima i koristi se za detektovanje memorijskih grešaka i radi analizu nad mašinskim kodom. Može se koristiti za otkrivanje više vrsta problema poput:
     - upisivanje vrednosti van granica opsega
