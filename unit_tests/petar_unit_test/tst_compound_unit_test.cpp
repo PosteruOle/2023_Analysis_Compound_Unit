@@ -25,7 +25,8 @@ private slots:
     void testCompoundUnitTemplate();
     void testIsValidTemplate();
     void testMergingCompoundUnits();
-
+    void testCondensingCompoundUnits();
+    void testMultiplyingCompoundUnits();
 };
 
 //-----------------------------------------------
@@ -41,16 +42,50 @@ void compound_unit_test::testCompoundUnitTemplate(){
 
 void compound_unit_test::testMergingCompoundUnits(){
     using acceleration = unit::compound_unit<unit::meter<1>, unit::second<-2>>;
-    //using cout_format = unit::to_str_type_t<acceleration>;
+
     using merged = unit::merge_t<acceleration,
                                  unit::compound_unit<unit::second<3>,
                                                      unit::second<2>>>;
     using merged_cout_format = unit::to_str_type_t<merged>;
-    //std::cout << "Merged two compound_units:\n"
-    //          << merged_cout_format::str()
-    //          << std::endl << std::endl;
     std::string return_value=merged_cout_format::str();
+
     const char *expected_value="s^2s^3m^1s^-2";
+
+    QCOMPARE(return_value, expected_value);
+}
+
+void compound_unit_test::testCondensingCompoundUnits(){
+    using acceleration = unit::compound_unit<unit::meter<1>, unit::second<-2>>;
+    //using cout_format = unit::to_str_type_t<acceleration>;
+
+    using merged = unit::merge_t<acceleration,
+                                 unit::compound_unit<unit::second<3>,
+                                                     unit::second<2>>>;
+    //using merged_cout_format = unit::to_str_type_t<merged>;
+
+
+    using condensed = unit::condense_t<merged>;
+    using condensed_cout_format = unit::to_str_type_t<condensed>;
+    std::string return_value=condensed_cout_format::str();
+    const char *expected_value="s^3m^1";
+    QCOMPARE(return_value, expected_value);
+}
+
+void compound_unit_test::testMultiplyingCompoundUnits(){
+    using acceleration = unit::compound_unit<unit::meter<1>, unit::second<-2>>;
+
+    //using merged = unit::merge_t<acceleration,
+    //                             unit::compound_unit<unit::second<3>,
+    //                                                 unit::second<2>>>;
+
+    using some_unit = unit::compound_unit<unit::second<-1>, unit::meter<4>>;
+
+    using multiplied = unit::multiply_t<acceleration,
+                                        some_unit>;
+    using multiplied_cout_format = unit::to_str_type_t<multiplied>;
+
+    std::string return_value=multiplied_cout_format::str();
+    const char *expected_value="m^5s^-3";
     QCOMPARE(return_value, expected_value);
 }
 
