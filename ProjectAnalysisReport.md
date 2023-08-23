@@ -1,6 +1,9 @@
 # Izveštaj analize projekta
 
 ## O projektu:
+Projekat je urađen za potrebe kursa Programske paradigme.
+Projekat je napisan u programskom jeziku C++ i mogao bi se svrstati pod funkcionalnu i generičku programsku paradigmu.
+Osnovna ideja iza samog projekta jeste pokušaj za definisanjem generičkog tipa "compound_unit" (složena jedinica) koji bi bio korišćen za reprezentovanje različitih mernih jedinica.
 
 ## Unit testing QtTest (testiranje jedinica koda):
 -Unit testovi, odnosno testovi jedinica koda, predstavljaju vrstu dinamičke verifikacije softvera. Pomoću njih se utvrđuje ispravnost manjih jedinica sistema, to mogu biti različite celine u zavisnosti od paradigme koja je korišćena.
@@ -72,4 +75,4 @@ s^-4
 ## Perf
 
 ## Zaključci:
-     
+U projektu nisu pronađeni veći propusti. Projekat je po obimu mali. Implementirano je dosta funkcionalnosti u .hpp fajlovima, ali je mali broj njih testiran u demo.cpp fajlu.     
