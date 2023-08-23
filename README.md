@@ -23,3 +23,4 @@ Ukoliko bismo pomnožili različite veličine, na primer: 32m/s^2 * 5s <br>
 
 
 ## Izvedeni zaključci:
+U projektu nisu pronađeni veći propusti. Projekat je po obimu mali. Implementirano je dosta funkcionalnosti u .hpp fajlovima, ali je mali broj njih testiran u demo.cpp fajlu.
