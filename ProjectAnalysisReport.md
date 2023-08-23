@@ -6,26 +6,21 @@ Projekat je napisan u programskom jeziku C++ i mogao bi se svrstati pod funkcion
 Osnovna ideja iza samog projekta jeste pokušaj za definisanjem generičkog tipa "compound_unit" (složena jedinica) koji bi bio korišćen za reprezentovanje različitih mernih jedinica.
 
 ## Unit testing QtTest (testiranje jedinica koda):
--Unit testovi, odnosno testovi jedinica koda, predstavljaju vrstu dinamičke verifikacije softvera. Pomoću njih se utvrđujemo ispravnost manjih jedinica sistema, odnosno različitih celina u zavisnosti od paradigme kojoj projekat pripada.
+Unit testovi, odnosno testovi jedinica koda, predstavljaju vrstu dinamičke verifikacije softvera. Pomoću njih se utvrđujemo ispravnost manjih jedinica sistema, odnosno različitih celina u zavisnosti od paradigme kojoj projekat pripada.
 
 ## Code coverage (gcov lcov):
 **Gcov** alat se koristi za određivanje pokrivenosti koda prilikom izvršavanja programa (code coverage) i dobija se uz **gcc** kompajler. 
-Zajedno sa **gcc** kompajlerom se koristi da bi se analizirao program i ustanovilo kako se isti može učiniti kreirati optimizovanijim. Takođe, uz pomoću njih možemo kreirati testove 
-kako bismo pokrili određene delove programa.
+Zajedno sa **gcc** kompajlerom se koristi da bi se analizirao program i ustanovilo kako se isti može učiniti kreirati optimizovanijim. Takođe, uz pomoću njih možemo kreirati testove kako bismo pokrili određene delove programa.
 
-**Gcov** se može koristiti za profajliranje programa u cilju otkrivanja dela koda  
-čijim bi se optimizovanjem postigla veća efikasnost programa. Korišćenjem **gcov**-a možemo
-saznati koje su naredbe, linije, grane, funkcije izvršene i koliko puta. Kako bismo dobijene 
-rezultate vezane za detekciju pokrivenosti koda našim test primerima lepše reprezentovali 
-koristimo alat **lcov**.
+**Gcov** se može koristiti za profajliranje programa u cilju otkrivanja dela koda čijim bi se optimizovanjem postigla veća efikasnost programa. Korišćenjem **gcov**-a možemo saznati 
+koje su naredbe, linije, grane, funkcije izvršene i koliko puta. Kako bismo dobijene rezultate vezane za detekciju pokrivenosti koda našim test primerima lepše reprezentovali koristimo alat **lcov**.
 
 -Kratak pregled izgenerisanih .html stranica:
 ![image](./screenshots/gcov_01.png)
 ![image](./screenshots/gcov_04.png)
 
 ## Valgrind - memcheck:
-- **Valgrind** je platforma otvorenog koda za kreiranje alata sposobnih za naprednu dinamičku analizu mašinskog koda (bilo povezanog bilo nepovezanog).
-- **Valgrind** obuhvata nekoliko alata od kojih je svaki specijalizovan za detektovanje određenog problema.
+- **Valgrind** je platforma otvorenog koda za kreiranje alata sposobnih za naprednu dinamičku analizu mašinskog koda (bilo povezanog bilo nepovezanog). **Valgrind** obuhvata nekoliko alata od kojih je svaki specijalizovan za detektovanje određenog problema.
 - Prvi od **Valgrind**-ovih alata primenjenih nad projektom **compound unit** bio je **memcheck**.
 - **Memcheck** kao alat koji si prilikom korišćenja **Valgrind**-a podrazumevano poziva, koristi se za detektovanje memorijskih grešaka i sprovođenja analize nad mašinskim kodom. Može se koristiti za otkrivanje više vrsta problema poput:
     - pristupanja ili upisivanje vrednosti van opsega;
