@@ -81,14 +81,26 @@ s^-4
 ```
 
 ## Valgrind - massif:
--Naredni alat koji je korišćen za analizu projekta je Valgrind-ov podalat - massif, alat za analizu hip memorije iliti profajler hip memorije. 
-Massif se koristi za vođenje evidencije o bajtovima o upotrebi, beleženje iskoriščenog prostora, samim tim i otkrivanje nekorišćenih objekata 
-i promenljivih  i u druge svrhe. Omogućava nam i merenje zauzeća stek memorije, ali to radi isključivo uz uključivanje 
-opcije (--stacks=yes), jer ta opcija dosta usporava rad alata.
+Naredni alat koji je korišćen za analizu projekta je Valgrind-ov podalat - massif, alat za analizu hip memorije iliti profajler hip memorije. 
+Massif se koristi za vođenje evidencije o bajtovima o upotrebi, beleženje iskoriščenog prostora, samim tim i otkrivanje nekorišćenih objekata i promenljivih  i u druge svrhe. 
+Omogućava nam i merenje zauzeća stek memorije, ali to radi isključivo uz uključivanje opcije (--stacks=yes), jer ta opcija dosta usporava rad alata.
 
 ## Valgrind - callgrind:
+**Callgrind** je alat koji u vidu grafa generiše listu poziva funkcija korisničkog programa.
+Pri osnovnim podešavanjima sakupljeni podaci sastoje se od broja izvršenih instrukcija, njihovog odnosa sa linijom u izvršnom kodu, odnosa između pozivajućih i pozvanih funkcija, kao i broja takvih poziva.
+
+Nakon završetka rada programa i **Callgrind** alata podaci koji se analiziraju su zapisani u datoteci callgrind.out.PID , gde PID predstavlja identifikator procesa. Program 
+**callgrind_annotate** na osnovu generisanog izveštaja prikazuje listu funkcija. Za grafičku vizuelizaciju preporučeno je koristiti alate poput **KCachegrind**, koji olakšava 
+navigaciju ukoliko **Callgrind** napravi veliku količinu podataka. Program **callgrind_control** omogućava interaktivnu kontrolu i nadgledanje programa prilikom izvršavanja. Moguće je 
+dobiti i informacije o stanju na steku, a može se, takođe, u svakom trenutku generisati profil.
 
 ## Perf
+**Perf** (performance analysis tools for Linux) je alat za profajliranje koji pruža jednostavan interfejs preko komandne linije. **Perf** je zasnovan na **perf_events** interfejsu 
+koji daju novije verzije Linux kernela. Upotrebljava se na sledeći način:
+```
+perf [--version] [--help] [OPTIONS] COMMAND [ARGS]
+```
+Neke komande mogu da budu nedostupne pošto zahtevaju specijalnu kernel podršku.
 
 ## Zaključci:
-U projektu nisu pronađeni veći propusti. Projekat je po obimu mali. Implementirano je dosta funkcionalnosti u .hpp fajlovima, ali je mali broj njih testiran u demo.cpp fajlu.     
+U projektu nisu pronađeni veći propusti. Projekat je po obimu mali. Implementirano je dosta funkcionalnosti u .hpp fajlovima, ali je mali broj njih testiran u demo.cpp fajlu u kome se nalazi main funkcija.     
