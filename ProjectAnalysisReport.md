@@ -85,6 +85,8 @@ Naredni alat koji je korišćen za analizu projekta je Valgrind-ov podalat - mas
 Massif se koristi za vođenje evidencije o bajtovima o upotrebi, beleženje iskoriščenog prostora, samim tim i otkrivanje nekorišćenih objekata i promenljivih  i u druge svrhe. 
 Omogućava nam i merenje zauzeća stek memorije, ali to radi isključivo uz uključivanje opcije (--stacks=yes), jer ta opcija dosta usporava rad alata.
 
+Massif Visualiser...
+
 ## Valgrind - callgrind:
 **Callgrind** je alat koji u vidu grafa generiše listu poziva funkcija korisničkog programa.
 Pri osnovnim podešavanjima sakupljeni podaci sastoje se od broja izvršenih instrukcija, njihovog odnosa sa linijom u izvršnom kodu, odnosa između pozivajućih i pozvanih funkcija, kao i broja takvih poziva.
