@@ -31,7 +31,8 @@ private slots:
     void testDividingCompoundUnits2();
     void testRemovingZeroEqualDegres();
     void testUnfoldingNestedCompoundUnits();
-    void testFormatingCompoundUnits();
+    void testFormatingCompoundUnits1();
+    void testFormatingCompoundUnits2();
 };
 
 //-----------------------------------------------
@@ -165,7 +166,7 @@ void compound_unit_test::testUnfoldingNestedCompoundUnits(){
     QCOMPARE(return_value, expected_value);
 }
 
-void compound_unit_test::testFormatingCompoundUnits(){
+void compound_unit_test::testFormatingCompoundUnits1(){
    /*
     * Defining a nested compound_unit
     * (a compound_unit whose elements
@@ -192,6 +193,32 @@ void compound_unit_test::testFormatingCompoundUnits(){
 
     std::string return_value=formated_f_cout_format::str();
     const char *expected_value="s^-4";
+    QCOMPARE(return_value, expected_value);
+}
+
+void compound_unit_test::testFormatingCompoundUnits2(){
+    using nested_cu = unit::compound_unit<unit::meter<3>,
+                                          unit::compound_unit<>,
+                                          unit::compound_unit<unit::meter<7>,
+                                          unit::compound_unit<unit::second<-6>,
+                                                              unit::meter<-8>>>>;
+   /*
+    * Here we are unfolding a nested compound_unit.
+    */
+    using unfolded = unit::unfold_t<nested_cu>;
+
+   /*
+    * Since the resulting compound_unit is not condensed
+    * and potentially has degrees that are equal to zero,
+    * we are here formating the resulting compound_unit.
+    */
+    using formated_h = unit::condense_t<unfolded>;
+    //using formated_f = unit::remove_zero_cu_degree_t<formated_h>;
+    //using formated_f_cout_format = unit::to_str_type_t<formated_f>;
+    using formated_f_cout_format = unit::to_str_type_t<formated_h>;
+
+    std::string return_value=formated_f_cout_format::str();
+    const char *expected_value="m^2s^-6";
     QCOMPARE(return_value, expected_value);
 }
 
